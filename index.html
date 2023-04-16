@@ -160,7 +160,7 @@
         }
 
         function namereplace(combatant, index) {
-            if (combatant["name"].test("YOU") !== -1) {
+            if (combatant["name"] === "YOU") {
                 combatant["name"] = combatant["name"].replace("YOU" , myname );
             }
             return combatant["name"];
